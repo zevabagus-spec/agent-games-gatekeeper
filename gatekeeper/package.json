@@ -1,0 +1,29 @@
+{
+  "name": "proof-gatekeeper-agent",
+  "version": "1.0.0",
+  "description": "Proof Gatekeeper agent for the zkVerify Agent Games competition (original implementation from the public spec)",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
+    "test": "npm run build && node test/e2e.test.mjs",
+    "probe": "node scripts/probe-signals.mjs"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "circomlibjs": "^0.1.7",
+    "snarkjs": "^0.7.6"
+  },
+  "devDependencies": {
+    "@types/node": "^26.6.6",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}
